@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: 
-          repository: test_repo
+          repository: AmbientPlatypus/test_repo
           submodules: true
 
       - name: Pull & update submodules recursively
