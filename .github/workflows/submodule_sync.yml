@@ -12,9 +12,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with: 
+        with:
+          token: ${{ secrets.PAT }} # `GH_PAT` is a secret that contains your PAT
           repository: AmbientPlatypus/test_repo
-          token: ${{ secrets.GH_TOKEN }}
           submodules: true
 
       - name: Pull & update submodules recursively
