@@ -14,7 +14,6 @@ jobs:
       - uses: actions/checkout@v4
         with: 
           repository: AmbientPlatypus/test_repo
-          token: ${{ secrets.SUBMODULE_SYNC }}
           submodules: true
 
       - name: Pull & update submodules recursively
