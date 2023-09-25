@@ -24,8 +24,8 @@ jobs:
 
       - name: Commit
         run: |
-          git config user.email overseer@gwgs.net
-          git config user.name AmbientPlatypus
+          git config user.email github-actions@github.com
+          git config user.name github-actions
           gh auth status
           git add --all
           git commit -m "Update submodules" || echo "No changes to commit"
