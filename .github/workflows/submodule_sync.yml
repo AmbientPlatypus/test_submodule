@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.PAT }} # `GH_PAT` is a secret that contains your PAT
+          token: ${{ secrets.GITHUB_TOKEN }} # `GH_PAT` is a secret that contains your PAT
           repository: AmbientPlatypus/test_repo
           submodules: true
 
